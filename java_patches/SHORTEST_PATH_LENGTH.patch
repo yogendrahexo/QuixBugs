@@ -1,0 +1,20 @@
+--- java_programs/SHORTEST_PATH_LENGTH.java
++++ correct_java_programs/SHORTEST_PATH_LENGTH.java
+@@ -1,5 +1,7 @@
+-package java_programs;
++package correct_java_programs;
+ import java.util.*;
++
++import java_programs.Node;
+ 
+ /**
+  *
+@@ -35,7 +37,7 @@
+                 }
+ 
+                 unvisitedNodes.put(nextnode, Math.min(unvisitedNodes.get(nextnode),
+-                        unvisitedNodes.get(nextnode) + length_by_edge.get(Arrays.asList(node, nextnode))));
++                        distance + length_by_edge.get(Arrays.asList(node, nextnode))));
+             }
+         }
+ 
